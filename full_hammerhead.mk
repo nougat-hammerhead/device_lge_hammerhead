@@ -30,4 +30,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 $(call inherit-product, device/lge/hammerhead/device.mk)
 $(call inherit-product-if-exists, vendor/lge/hammerhead/device-vendor.mk)
 
+$(call inherit-product-if-exists, vendor/yashar/main.mk)
+
 TARGET_NEEDS_TEXT_RELOCATIONS := true
