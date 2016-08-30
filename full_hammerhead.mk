@@ -33,3 +33,10 @@ $(call inherit-product-if-exists, vendor/lge/hammerhead/hammerhead-vendor.mk)
 $(call inherit-product-if-exists, vendor/yashar/main.mk)
 
 TARGET_NEEDS_TEXT_RELOCATIONS := true
+
+# inline kernel building
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+TARGET_VARIANT_CONFIG := hammerhead_defconfig
+TARGET_SELINUX_CONFIG := hammerhead_defconfig
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
