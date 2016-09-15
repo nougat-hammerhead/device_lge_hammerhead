@@ -32,7 +32,8 @@ $(call inherit-product-if-exists, vendor/lge/hammerhead/hammerhead-vendor.mk)
 
 $(call inherit-product-if-exists, vendor/yashar/main.mk)
 
-TARGET_NEEDS_TEXT_RELOCATIONS := true
+# allow text relocations
+TARGET_ALLOW_TEXT_RELOCATIONS := true
 
 # inline kernel building
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
