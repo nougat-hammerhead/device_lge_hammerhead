@@ -41,3 +41,6 @@ TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
 TARGET_SELINUX_CONFIG := hammerhead_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+
+# fix slow rom flash
+BOARD_NO_SECURE_DISCARD := true
