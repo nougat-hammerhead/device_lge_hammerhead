@@ -41,3 +41,6 @@ TARGET_KERNEL_CONFIG := hammerhead_defconfig
 TARGET_VARIANT_CONFIG := hammerhead_defconfig
 TARGET_SELINUX_CONFIG := hammerhead_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+
+# fix video recording
+TARGET_USES_LEGACY_CAMHAL := true
