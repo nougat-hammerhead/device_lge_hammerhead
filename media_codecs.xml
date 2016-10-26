@@ -64,7 +64,7 @@
         </MediaCodec>
     </Encoders>
     <Decoders>
-        <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
+        <!--MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports"/>
             <Quirk name="defers-output-buffer-allocation"/>
@@ -75,7 +75,7 @@
             <Limit name="bitrate" range="1-100000000" />
             <Feature name="adaptive-playback" />
             <Limit name="concurrent-instances" max="13" />
-        </MediaCodec>
+        </MediaCodec-->
         <MediaCodec name="OMX.qcom.video.decoder.avc.secure" type="video/avc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports"/>
@@ -125,3 +125,4 @@
     </Decoders>
     <Include href="media_codecs_google_video.xml" />
 </MediaCodecs>
+
